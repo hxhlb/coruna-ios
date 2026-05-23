@@ -1,0 +1,5 @@
+DEVELOPMENT_TEAM =
+BUNDLE_ID_SUFFIX = .dev
+PRODUCT_BUNDLE_IDENTIFIER = local.coruna.ios$(BUNDLE_ID_SUFFIX)
+
+#include? "LocalSigning.xcconfig"

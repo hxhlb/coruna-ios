@@ -1,0 +1,6 @@
+// Copy this file to LocalSigning.xcconfig for local device signing.
+// LocalSigning.xcconfig is ignored by git.
+
+DEVELOPMENT_TEAM =
+BUNDLE_ID_SUFFIX = .local
+PRODUCT_BUNDLE_IDENTIFIER = local.coruna.ios$(BUNDLE_ID_SUFFIX)
