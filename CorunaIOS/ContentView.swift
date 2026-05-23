@@ -41,7 +41,11 @@ struct ContentView: View {
             Button {
                 controller.toggleServer()
             } label: {
-                Label(controller.isRunning ? "停止" : "启动", systemImage: controller.isRunning ? "stop.fill" : "play.fill")
+                Label {
+                    Text(LocalizedStringKey(controller.isRunning ? "button.stop" : "button.start"))
+                } icon: {
+                    Image(systemName: controller.isRunning ? "stop.fill" : "play.fill")
+                }
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)

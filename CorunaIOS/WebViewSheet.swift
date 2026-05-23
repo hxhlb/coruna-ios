@@ -12,7 +12,7 @@ struct WebViewSheet: View {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
-                        Button("关闭") {
+                        Button("button.close") {
                             dismiss()
                         }
                     }

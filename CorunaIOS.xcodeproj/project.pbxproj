@@ -14,6 +14,10 @@
 		1A0000010000000000000005 /* StaticHTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000015 /* StaticHTTPServer.swift */; };
 		1A0000010000000000000006 /* Resources/CorunaWeb in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000017 /* Resources/CorunaWeb */; };
 		1A0000010000000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000010000000000000018 /* Assets.xcassets */; };
+		1A000001000000000000000B /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001F /* Localization.swift */; };
+		1A0000010000000000000008 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001C /* en.lproj */; };
+		1A0000010000000000000009 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001D /* zh-Hans.lproj */; };
+		1A000001000000000000000A /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1A000001000000000000001E /* zh-Hant.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +30,13 @@
 		1A0000010000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0000010000000000000017 /* Resources/CorunaWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources/CorunaWeb; sourceTree = "<group>"; };
 		1A0000010000000000000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
-		1A0000010000000000000019 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Signing.xcconfig; sourceTree = "<group>"; };
-		1A000001000000000000001A /* LocalSigning.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/LocalSigning.xcconfig.example; sourceTree = "<group>"; };
-		1A000001000000000000001B /* setup-local-signing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Scripts/setup-local-signing.sh; sourceTree = "<group>"; };
+		1A0000010000000000000019 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		1A000001000000000000001A /* LocalSigning.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = LocalSigning.xcconfig.example; sourceTree = "<group>"; };
+		1A000001000000000000001B /* setup-local-signing.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "setup-local-signing.sh"; sourceTree = "<group>"; };
+		1A000001000000000000001C /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		1A000001000000000000001D /* zh-Hans.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		1A000001000000000000001E /* zh-Hant.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
+		1A000001000000000000001F /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				1A0000010000000000000013 /* WebViewSheet.swift */,
 				1A0000010000000000000014 /* ServerController.swift */,
 				1A0000010000000000000015 /* StaticHTTPServer.swift */,
+				1A000001000000000000001F /* Localization.swift */,
+				1A000001000000000000001C /* en.lproj */,
+				1A000001000000000000001D /* zh-Hans.lproj */,
+				1A000001000000000000001E /* zh-Hant.lproj */,
 				1A0000010000000000000016 /* Info.plist */,
 				1A0000010000000000000017 /* Resources/CorunaWeb */,
 			);
@@ -134,6 +146,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hans",
+				"zh-Hant",
 				Base,
 			);
 			mainGroup = 1A0000010000000000000030;
@@ -155,6 +169,9 @@
 			files = (
 				1A0000010000000000000006 /* Resources/CorunaWeb in Resources */,
 				1A0000010000000000000007 /* Assets.xcassets in Resources */,
+				1A0000010000000000000008 /* en.lproj in Resources */,
+				1A0000010000000000000009 /* zh-Hans.lproj in Resources */,
+				1A000001000000000000000A /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +187,7 @@
 				1A0000010000000000000003 /* WebViewSheet.swift in Sources */,
 				1A0000010000000000000004 /* ServerController.swift in Sources */,
 				1A0000010000000000000005 /* StaticHTTPServer.swift in Sources */,
+				1A000001000000000000000B /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

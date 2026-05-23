@@ -1,0 +1,10 @@
+"button.start" = "启动";
+"button.stop" = "停止";
+"button.close" = "关闭";
+"status.not_started" = "未启动";
+"status.stopped" = "已停止";
+"log.bundle_resource_missing" = "未找到 bundle resourceURL";
+"log.server_starting" = "HTTP server 正在启动：%@";
+"log.server_start_failed" = "HTTP server 启动失败：%@";
+"log.server_stopped" = "HTTP server 已停止";
+"log.server_ready" = "HTTP server 已就绪：%@";

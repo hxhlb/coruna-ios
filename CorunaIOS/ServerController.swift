@@ -12,9 +12,9 @@ final class ServerController: ObservableObject {
 
     var statusText: String {
         if let serverURL {
-            return isRunning ? serverURL.absoluteString : "已停止"
+            return isRunning ? serverURL.absoluteString : L10n.text("status.stopped")
         }
-        return "未启动"
+        return L10n.text("status.not_started")
     }
 
     func toggleServer() {
@@ -42,7 +42,7 @@ final class ServerController: ObservableObject {
     func startServer() {
         guard !isRunning else { return }
         guard let rootURL = Bundle.main.resourceURL?.appendingPathComponent("CorunaWeb", isDirectory: true) else {
-            append("未找到 bundle resourceURL", level: .error)
+            append(L10n.text("log.bundle_resource_missing"), level: .error)
             return
         }
 
@@ -62,9 +62,9 @@ final class ServerController: ObservableObject {
             self.serverURL = server.indexURL
             self.isRunning = true
             self.isReady = false
-            append("HTTP server starting: \(server.indexURL.absoluteString)", level: .info)
+            append(L10n.format("log.server_starting", server.indexURL.absoluteString), level: .info)
         } catch {
-            append("HTTP server start failed: \(error.localizedDescription)", level: .error)
+            append(L10n.format("log.server_start_failed", error.localizedDescription), level: .error)
         }
     }
 
@@ -75,13 +75,13 @@ final class ServerController: ObservableObject {
         isRunning = false
         isReady = false
         pendingOpen = nil
-        append("HTTP server stopped", level: .info)
+        append(L10n.text("log.server_stopped"), level: .info)
     }
 
     private func markReady() {
         guard isRunning else { return }
         isReady = true
-        append("HTTP server ready: \(serverURL?.absoluteString ?? "-")", level: .success)
+        append(L10n.format("log.server_ready", serverURL?.absoluteString ?? "-"), level: .success)
         let action = pendingOpen
         pendingOpen = nil
         action?()

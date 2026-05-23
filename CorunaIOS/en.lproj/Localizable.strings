@@ -1,0 +1,10 @@
+"button.start" = "Start";
+"button.stop" = "Stop";
+"button.close" = "Close";
+"status.not_started" = "Not started";
+"status.stopped" = "Stopped";
+"log.bundle_resource_missing" = "Bundle resourceURL not found";
+"log.server_starting" = "HTTP server starting: %@";
+"log.server_start_failed" = "HTTP server start failed: %@";
+"log.server_stopped" = "HTTP server stopped";
+"log.server_ready" = "HTTP server ready: %@";
