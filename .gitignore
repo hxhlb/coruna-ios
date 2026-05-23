@@ -2,7 +2,7 @@
 DerivedData/
 build/
 Config/LocalSigning.xcconfig
-image.png
+/image.png
 *.xcuserstate
 xcuserdata/
 .theos/
