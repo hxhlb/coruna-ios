@@ -2,7 +2,6 @@
 DerivedData/
 build/
 Config/LocalSigning.xcconfig
-Assets/Icons.icon/
 image.png
 *.xcuserstate
 xcuserdata/
