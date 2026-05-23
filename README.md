@@ -12,7 +12,7 @@ Coruna iOS 是一个自用研究工具，用 iOS App 承载原 Coruna Web 资源
 - 在 App 内启动/停止本地 HTTP server。
 - 提供两个访问入口：App 内 WKWebView 和系统 Safari。
 - 显示本地 server 状态、资源请求日志和错误日志。
-- 保持签名配置本地化，避免把个人 Team ID 提交到仓库。
+- 支持通过本地 `xcconfig` 覆盖签名和 Bundle ID 设置。
 
 ## 当前功能
 
@@ -57,4 +57,6 @@ Scripts/setup-local-signing.sh
 
 ## License
 
-暂未选择 License。
+本项目自写的 iOS 宿主代码使用 MIT License，详见 [LICENSE](LICENSE)。
+
+`CorunaIOS/Resources/CorunaWeb` 中打包的上游 Web 资源保留其原始来源和权利声明。

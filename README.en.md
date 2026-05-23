@@ -12,7 +12,7 @@ The current goal is not to rewrite the Coruna JavaScript or payload flow as nati
 - Start and stop a local HTTP server from the app.
 - Provide two launch paths: in-app WKWebView and system Safari.
 - Show server status, resource request logs, and error logs.
-- Keep personal signing settings local so Team IDs are not committed.
+- Support local `xcconfig` overrides for signing and Bundle ID settings.
 
 ## Current Features
 
@@ -57,4 +57,6 @@ This is a personal research-stage project. The current focus is stable local hos
 
 ## License
 
-No license has been selected yet.
+The iOS host code written for this project is licensed under the MIT License. See [LICENSE](LICENSE).
+
+Bundled upstream Web resources under `CorunaIOS/Resources/CorunaWeb` retain their original source and rights notices.
